@@ -1,0 +1,12 @@
+Decorator Pattern is used when you want to add additional functionality to a class without having to modify the base class.
+We have different types of pizza (NewYork, DeepDish, Neapolitan).
+All of them can have additional functionality (toppings) that are interchangeable.
+There is also a possibility that the pizza store include new sizes, toppings.
+We would want to design the system such that it is easy for the programmer to add these new functionality without breaking how the others work or even needing to learn how everything is connected.
+
+Thought experiment:
+Try adding a "Family" size pizza
+Try adding a "Cheesy Crust" topping
+
+
+https://www.geeksforgeeks.org/decorator-pattern-set-3-coding-the-design/

@@ -1,0 +1,12 @@
+ApplicationLayer.java is the NullObject
+it does nothing. it just returns the parameters it receives. Its mainly used as a default class. The advantage of using it is that it removes conditional statements that check if the object is null (cleaner code)
+
+Chain of Responsibility is done by the Network.java layers. Network class delegates the work to its layers. it actually does nothing except pass data to the layers. The layers process the input
+
+Object Pool is used for the layers. The layers are initialized once at the start. Only one instance of the layers is used throughout the duration of the program.
+
+All the class fields are private (Private Class Data). Ex. No other class can access the EncryptionLayer key or the headers of TcpLayer and EthernetLayer
+
+
+https://sourcemaking.com/design_patterns/null_object
+https://refactoring.guru/design-patterns/chain-of-responsibility

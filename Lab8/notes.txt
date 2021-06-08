@@ -1,0 +1,6 @@
+Adapter is good for making old code work with new code. Most of the time, old code cannot be changed anymore so we work around it by wrapping it inside an "adapter" class
+
+Real life example: You have headphones that have a 3.5mm jack but your phone only uses a usb-c port.
+To make your headphones work with your modern phone, you attach an adapter to it so that it can still connect via the usb-c port.
+
+https://sourcemaking.com/design_patterns/adapter
