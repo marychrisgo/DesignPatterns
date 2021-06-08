@@ -1,0 +1,24 @@
+Objective of the homework:
+Add new behaviour to a set of code without doing any changes to it.
+Traverse through all child elements of the class and perform an operation
+
+
+How to implement:
+1. Declare the visitor interface with a visiting method
+void iterate(Visitor visitor);
+
+2. Implement the methods in all concrete element classes. These methods must simply redirect the call to
+the visiting method on the visitor object which matches the class of the current element.
+
+
+Applications of this pattern:
+This is used when you have to additional behavior to code that you dont have control over (legacy code/3rd party code).
+In the case of the homework, this is Component tree.
+
+This is also good when you need to perform an operation on all elements of a complex class
+
+Notes:
+This implementation of the calculator does not take into account MDAS or PEMDAS. It evaluates the input from left to right.
+
+https://refactoring.guru/design-patterns/visitor
+https://sourcemaking.com/design_patterns/visitor

@@ -1,0 +1,30 @@
+Objective of the homework:
+Currently, you have a working application: Simulating how the virus can affect 100 households with 5 people per household for 10000 days
+The simulation instantiates (allocates memory) for 500 person objects. The memory used is not significant yet but if we were to increase the number to hundreds of thousands or millions, it might use up a huge chunk of your computer's resources.
+
+Flyweight allows us to store parts of objects or even whole objects in memory and reuse, reducing the program's memory usage.
+
+How to implement:
+1. Identify the following:
+a. The class you want to apply it on
+b. Intrinsic properties - these are properties that are dependent on one or more extrinsic properties
+c. Extrinsic properties - these are indepedent from other variables
+
+2. Create a Factory class
+a. for each intrinsic property, create a method that returns a value for that intrinsic property. that method should take in the extrinsic property as input parameter
+b. modify the method. add a cache (hashmap) that stores previous values of that intrinsic property. 
+c. check if the cache (hashmap) contains the value based on the input parameter. 
+	if yes, return that value. 
+	if no, create a new instance of that value, store it in the cache, then return the new value.
+	
+3. Update the code so that the object's intrinsic properties are now instantiated from the factory.
+
+Applications of this pattern:
+computer games like old 90's console games, mobile games and even pc games today save memory by reusing sprites and particle effects
+String objects in Java are cached and reused
+
+
+
+
+https://refactoring.guru/design-patterns/flyweight/java/example#:~:text=Flyweight%20is%20a%20structural%20design,keeping%20their%20memory%20consumption%20low.&text=In%20other%20words%2C%20the%20Flyweight,data%20used%20by%20different%20objects.
+https://www.geeksforgeeks.org/flyweight-design-pattern/
